@@ -1,6 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+#hero {
+  /*
+   * Set the height based on a comparison between your screen and the Figma design.
+   * Steps to determine the height:
+   * 1. Open the browser console and type `window.innerWidth` to get your screen width.
+   * 2. Check the width specified in the Figma design file.
+   * 3. Adjust the height proportionally based on the difference between the two widths.
+   * Current height (654px) is calculated assuming a specific screen-to-Figma width ratio.
+   */
+  height: 654px;
+  background-image: linear-gradient(
+      0deg,
+      #090909 3.48%,
+      rgba(16, 16, 16, 0) 101.63%
+    ),
+    url("../assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
